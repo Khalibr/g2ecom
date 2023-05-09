@@ -161,6 +161,7 @@ span {
     justify-content: center;
     gap: 2rem;
 }
+
 .location-img {
     display: flex;
     justify-content: flex-start;
