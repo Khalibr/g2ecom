@@ -100,10 +100,18 @@
         font-size: 13px;
     }
 
+    /* media footer */
+    .footer-social h3{
+        font-size: 13px;
+    }
+    .btn-footer{
+        right: 15px;
+    }
+
 }
 
 /* MEDIAQUERY SMALL DEVICES (600px and up)*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 413px){
 
 }
 
