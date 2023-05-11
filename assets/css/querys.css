@@ -1,6 +1,6 @@
 
 /* MEDIAQUERY EXTRA SMALL DEVICES (600px and down) */
-@media (max-width: 412px){ 
+@media (max-width: 480px){ 
     section{
         min-height: 100vh;
         padding: 8rem 3% 2rem;
