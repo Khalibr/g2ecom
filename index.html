@@ -4,146 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>otp-website</title>
-    <!-- custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- boxicons -->
+    <link rel="shortcut icon" href="assets/media/logo.png">
+    <title> G2Ecom </title>
+
+
+    <!-- css main -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- boxicon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- media querys -->
-    <link rel="stylesheet" href="assets/css/querys.css">
 </head>
 <body>
+    
+    <!-- ### header ### -->
+    <header id="header">
 
-    <!-- header design -->
-    <header class="header">
-        <div class="content-logo">
-            <img src="assets/media/logo-b.png" alt="logo g2ecom">
-            <a href="#" class="logo">G2ecom</a>
-        </div>
-        
+        <a href="#" class="logo">
+            <img src="/assets/media/logo_main.png" alt="G2Ecom">
+        </a>       
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#location">Location</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="/assets/pages/about.html">About</a></li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="/assets/pages/contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- section home design -->
     <section class="home" id="home">
 
-        <div class="content-home">
+        <div class="home__content">
             <h1>Proyecto <span class="multiple-text"></span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptas sequi <br> inventore unde voluptatibus modi odit, nihil error, iusto laborum vero quidem sit aliquid excepturi?</p>
-            <div class="social-media">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptas sequi inventore unde voluptatibus modi odit, nihil error, iusto laborum vero quidem sit aliquid excepturi?</p>
+            <div class="home__media">
                 <a href="https://github.com/Khalibr/g2ecom" target="_blank"><i class='bx bxl-github'></i></a>
                 <a href="#"><i class='bx bxl-facebook-circle'></i></a>
                 <a href="#"><i class='bx bxl-linkedin'></i></a>
                 <a href="#"><i class='bx bxl-gmail'></i></a>
             </div>    
         </div>
-        <div class="home-img">
-            <img src="assets/media/makeup2.png" alt="media-img">
+        <div class="home__img">
+            <img src="/assets/media/media_divice.png" alt="media-img">
         </div>
 
     </section>
 
-    <!-- Section location design -->
-    <section class="location" id="location">
-
-        <div class="location-img">
-            <img src="assets/media/makeup-b.png" alt="location-img">
-            <div class="location-text-1">
-                <h2><span>Productos</span></h2>
-                <ul>
-                    <li>Equipos</li>
-                    <li>Hardware</li>
-                    <li>Perifericos Gamming</li>
-                    <li>Monitores</li>
-                    <li>Accesorios</li>
-                </ul>
-            </div>
-            <div class="location-text-1">
-                <h2><span>Marcas</span></h2>
-                <ul>
-                    <li>AMD</li>
-                    <li>Asus</li>
-                    <li>Logitech</li>
-                    <li>Levono</li>
-                    <li>Y Mas...</li>
-                </ul>
-            </div>
-        </div>
-        <div class="content-location">
-            <div class="location-text-2">
-                <h2>Estamos <span>en</span></h2>
-                <div class="location-info">
-                    <i class='bx bxs-map'> Guatemala 5574, CABA</i>
-                    <i class='bx bxl-whatsapp'> 011-1234-5678</i>
-                    <i class='bx bx-phone'> 0800-123-456</i>
-                </div>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6569.865432578376!2d-58.431826!3d-34.580569!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5561595ff23%3A0x21d92fe4b2e6572e!2sTucson!5e0!3m2!1ses!2sar!4v1683059324301!5m2!1ses!2sar" width="350vh" height="350vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-    </section>
-
-    <!-- Section about design -->
-    <section class="about" id="about">
-
-        <div class="content-about">
-            <div class="cards">
-                <i class='bx bx-code-curly' ></i>
-                <h1>Mariano</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sed?</p>
-                <div class="about-contact">
-                    <a href="" class="btn"><i class='bx bxs-contact'></i></a>
-                </div>
-            </div>
-            <div class="cards">
-                <i class='bx bx-code' ></i>
-                <h1>Cesar</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sed?</p>
-                <div class="about-contact">
-                    <a href="" class="btn"><i class='bx bxs-contact'></i></a>
-                </div>
-            </div>
-            <div class="cards">
-                <i class='bx bx-code-alt' ></i>
-                <h1>Julian</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sed?</p>
-                <div class="about-contact">
-                    <a href="" class="btn"><i class='bx bxs-contact'></i></a>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-
-    <!-- Section contact design -->
-    <section class="contact" id="contact">
-
-        <h2 class="contact-header">Contacta<span>nos!</span></h2>
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full name" required>
-                <input type="email" placeholder="email" required>
-            </div>
-        <form action="#">
-            <div class="input-box">
-                <input type="number" placeholder="Mobile number">
-                <input type="text" placeholder="Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Ur message"></textarea>
-            <input type="submit" value="Send message" class="contact-btn">
-        </form>
-       
-    </section>
-
-    <!-- Footer design -->
-    <footer class="footer" id="footer">
-
-        <div class="footer-social">
+    
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer__social">
             <a href="https://github.com/Khalibr/g2ecom" target="_blank"><i class='bx bxl-github'></i></a>
             <a href="#"><i class='bx bxl-linkedin'></i></a>
             <a href="#"><i class='bx bxl-gmail'></i></a>
@@ -152,17 +62,16 @@
             <h3>Copyright &copy; 2023 - developer Julian Medina</h3>
         </div>
 
-        <div class="btn-footer">
+        <div class="footer__btn">
             <a href="#"><i class='bx bxs-home-alt-2' ></i></a>
         </div>
-
     </footer>
 
 
     <!-- Script typed -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Script app.js -->
-    <script src="assets/js/app.js"></script>
-
+    <script src="/assets/js/typed.js"></script>
+    
 </body>
 </html>

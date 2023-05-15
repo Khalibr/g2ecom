@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/media/logo.png">
+    <title> G2Ecom </title>
+
+    <!-- css main -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- ### header ### -->
+    <header id="header">
+
+        <a href="#" class="logo">
+            <img src="/assets/media/logo_main.png" alt="G2Ecom">
+        </a>       
+        <nav class="navbar">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/assets/pages/about.html">About</a></li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- section contact design -->
+    <section class="banner" id="banner">
+        <div class="about__banner">
+            <div class="banner__title">
+                <h1>CONTACT</h1>
+            </div>
+        </div>        
+    </section>
+
+    <!-- section banner info desing -->
+    <section class="banner__intro" id="intro-banner">
+
+        <h2>
+            Our
+            <span>•</span>
+            Location
+        </h2>
+        <p>You are always welcome to contact us. Our Customer Service is available Mon–Fri 9:00 a.m.–8:00 p.m. and Sat–Sun 10:00 a.m.–3:00 p.m. (GMT +3). We look forward to hearing from you!</p>
+
+    </section>
+
+    <!-- Section location desing -->
+    <section class="contact__location" id="contact__location">
+
+        <div class="location__content">
+            <img src="/assets/media/location.png" alt="location-img">
+            <div class="location__text-1">
+                <h2>Products</h2>
+                <ul>
+                    <li>Hardware</li>
+                    <li>Gaming Peripherals</li>
+                    <li>Monitors</li>
+                    <li>Accesories</li>
+                    <li>& More...</li>
+                </ul>
+            </div>
+            <div class="location__text-1">
+                <h2>Brands</h2>
+                <ul>
+                    <li>AMD</li>
+                    <li>Asus</li>
+                    <li>Logitech</li>
+                    <li>Levono</li>
+                    <li>& More...</li>
+                </ul>
+            </div>
+        </div>
+        <div class="location__content">
+            <div class="location__text-2">
+                <h2>Ubicati<span>on</span></h2>
+                <div class="location-info">
+                    <i class='bx bxs-map'> Guatemala 5574, CABA</i>
+                    <i class='bx bxl-whatsapp'> 011-1234-5678</i>
+                    <i class='bx bx-phone'> 0800-123-456</i>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6569.865432578376!2d-58.431826!3d-34.580569!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5561595ff23%3A0x21d92fe4b2e6572e!2sTucson!5e0!3m2!1ses!2sar!4v1683059324301!5m2!1ses!2sar" width="350vh" height="350vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+    <!-- Section form desing -->
+    <section class="contact__form" id="contact__form">
+
+        <div class="contact__title">
+            <h2>What kind of <span>projects</span> are you interested in?</h2>
+            <p>We work closely with clients.</p>
+        </div>
+
+        <form action="" class="form" id="form">
+            
+            <!-- Group full name -->
+            <div class="form__group" id="group__name">
+                <!-- <label for="name" class="form__label">Full name</label> -->
+                <div class="form__group-input">
+                    <input type="text" class="form__input" name="name" id="name" placeholder="Full name">
+                    <i class='form__validation-status fas fa-times-circle' ></i>
+                </div>
+                <p class="form__input-error">The full name must be between 4 and 16 digits and can only contain numbers, letters and an underscore.</p>
+            </div>
+
+            <!-- Group Subject -->
+            <div class="form__group" id="group__subject">
+                <!-- <label for="subject" class="form__label">Subject</label> -->
+                <div class="form__group-input">
+                    <input type="text" class="form__input" name="subject" id="subject" placeholder="Subject">
+                    <i class='form__validation-status fas fa-times-circle' ></i>
+                </div>
+                <p class="form__input-error">The subject must be between 4 and 16 digits and can only contain numbers, letters and an underscore.</p>
+            </div>
+            
+            <!-- Group email-->
+            <div class="form__group" id="group__email">
+                <!-- <label for="email" class="form__label">Email</label> -->
+                <div class="form__group-input">
+                    <input type="email" class="form__input" name="email" id="email" placeholder="example@gmail.com">
+                    <i class='form__validation-status fas fa-times-circle' ></i>
+                </div>
+                <p class="form__input-error">The email can only contain numbers, letters, and an underscore.</p>
+            </div>
+            
+            <!-- Group phone-->
+            <div class="form__group" id="group__phone">
+                <!-- <label for="phone" class="form__label">Mobile number</label> -->
+                <div class="form__group-input">
+                    <input type="text" class="form__input" name="phone" id="phone" placeholder="011-1234-5678">
+                    <i class='form__validation-status fas fa-times-circle' ></i>
+                </div>
+                <p class="form__input-error">The phone can only contain numbers and the maximum is 14 digits.</p>
+            </div>
+
+            
+            <!-- Text area -->
+            <div class="form__group form__textarea" id="group__textarea">
+                <!-- <label for="textarea" class="form__label">Message</label> -->
+                <textarea name="textarea" class="form__textarea" id="form__textarea" cols="30" rows="10" placeholder="Ur message"></textarea>
+            </div>
+            
+            <!-- Mns warning -->
+            <div class="form__msn" id="form__msn">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Pls! Fill the form correctly.</p>
+            </div>
+
+            <!-- Group btn -->
+            <div class="form__group form__group-btn-submit">
+                <button type="submit" class="form__btn">Submit</button>
+                <p class="form__msn-submitted" id="form__msn-submitted">Form submitted successfully!</p>
+            </div>
+        </form>
+
+    </section>
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer__social">
+            <a href="https://github.com/Khalibr/g2ecom" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-gmail'></i></a>
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            
+            <h3>Copyright &copy; 2023 - developer Julian Medina</h3>
+        </div>
+
+        <div class="footer__btn">
+            <a href="#"><i class='bx bxs-home-alt-2' ></i></a>
+        </div>
+    </footer>
+
+    <!-- Script form.js -->
+    <script src="/assets/js/form.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
