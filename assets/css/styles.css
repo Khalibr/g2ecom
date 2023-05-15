@@ -57,16 +57,11 @@
     font-family: 'Poppins', sans-serif;
 } 
 
-/* Normalize Body - section */
-body{
-	display: grid;
-	min-height: 100vh;
-	grid-template-rows: auto 1fr auto;    
-}
+/* Normalize section */
 
 section{
     height: 100vh;
-    padding: var(--spacing-80-7) 2rem;
+    padding: var(--spacing-80-7) 3rem;
 }
 
 span{
@@ -456,7 +451,7 @@ span{
 }
 
 
-/* ============DESIGN FOOTER============ */
+/* ============DESIGN CONTACT============ */
 .contact__location{
     width: 100%;
     height: 200vh;
@@ -514,11 +509,82 @@ span{
 }
 
 
+/* ============DESIGN PROJECTS============ */
+#project {
+    width: 100%;
+    height: 200vh;
+    background-color: var(--bg-black);
+    display: flex;
+    flex-direction: column;
+}
+
+.project__services-1,
+.project__services-2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-28);
+}
+
+.project__services-1 img {
+    height: 50vh;
+    box-shadow: 0 0 1rem var(--text-blue);
+}
+
+.project__services-2 img {
+    width: 50vw;
+    box-shadow: 0 0 1rem var(--text-blue);
+}
+
+.project__services-1 h2,
+.project__services-2 h2 {
+    font-size: var(--font-medium);
+    color: var(--text-blue);
+    text-align: center;
+    font-weight: 800;
+    line-height: 3;
+}
+
+.project__services-1 p ,
+.project__services-2 p {
+    font-size: var(--font-small);
+    color: var(--text-white);
+    text-align: center;
+    font-weight: 500;
+}
+
+.projects__web {
+    height: 10vh;
+    background-color: var(--bg-blue);
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 0 1rem var(--text-blue);
+}
+
+.projects__web h2 {
+    font-size: var(--font-medium);
+    font-weight: 800;
+    color: var(--text-black);
+}
+
+.projects__web p {
+    font-size: var(--font-xsmall);
+    font-weight: 500;
+    color: var(--text-black);
+}
+
+.span-project {
+    color: var(--bg-black);
+}
+
+
+
 
 /* ============DESIGN FOOTER============ */
 #footer{
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -533,8 +599,8 @@ span{
     font-size: var(--font-small);
     color: var(--text-blue);
 }
-.footer__social h3 {
-    font-size: var(--font-small);
+.footer__social h4 {
+    font-size: var(--font-xsmall);
     color: var(--text-black);
 }
 
@@ -548,7 +614,6 @@ span{
 .footer__btn a {
     color:var(--text-pink);
 }
-
 
 
 /* ============DESIGN MediaQuery============ */
