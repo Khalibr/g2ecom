@@ -9,6 +9,8 @@
 
     <!-- css main -->
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- querys -->
+    <link rel="stylesheet" href="../css/querys.css">
     <!-- boxicon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -24,7 +26,7 @@
             <ul>
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -34,7 +36,7 @@
     <section class="banner" id="banner">
         <div class="about__banner">
             <div class="banner__title">
-                <h1>PROJECTS</h1>
+                <h1>Services</h1>
             </div>
         </div>        
     </section>
@@ -45,7 +47,7 @@
         <h2>
             Our
             <span>•</span>
-            Projects
+            Services
         </h2>
         <p>We take pride in having strong relationships with our clients. To us, business its more than just a handshake. Through our full suite of services, we help clients reach their goals and maximize return on investment while focusing on transparency and communication.</p>
 
@@ -55,6 +57,7 @@
     <section class="project" id="project">
 
         <div class="project__services-1">
+
             <div class="project__area">
                 <h2>Services</h2>
                 <p>Our services range from PC assembly to web design for our clients. In addition, we have the knowledge of extensive languages ​​to achieve the desired objective by those people.</p>
@@ -78,6 +81,20 @@
 
     </section>
 
+    <!-- section shop recommended -->
+    <section id="shop" class="shop">
+        <h1>Most recommended products</h1>
+        <div id="app">
+            <div v-for="product in products" class="shop__cards">
+                <img height="100" :src="product.img" alt="{{product.name}}">
+                <h2>{{product.name}}</h2>
+                <p>{{product.description}}</p>
+                <p class="price"> $ {{product.price}}</p>
+                <a :href="product.link" target="_blank">Buy</a>
+            </div>
+        </div>
+    </section>
+
     
 
     <!-- footer -->
@@ -97,10 +114,15 @@
     </footer>
 
 
+
     <!-- Script typed -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Script app.js -->
     <script src="../js/typed.js"></script>
+    <!-- CDN Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Vue.app -->
+    <script src="../js/vue/App.js"></script>
     
 </body>
 </html>

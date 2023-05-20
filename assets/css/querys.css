@@ -1,0 +1,200 @@
+
+/* ============QUERY SMALL (PHONE)============*/
+@media screen and (max-width:500px) {
+
+    /* NORMALIZE SECTION QUERY */
+    section {
+        padding: 8rem 1rem 1rem;
+    }
+
+    /* ============Query HEADER============*/
+    .navbar a {
+        font-size: 15px;
+    }
+
+    /* ============Query HOME============*/
+    .home {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .home__content {
+        width: 80%;
+    }
+
+    .home__img img {
+        width: 50vw;
+    }
+
+    .home h1,
+    .home span {
+        font-size: 25px;
+    }
+
+    .home p {
+        font-size: 15px;
+    }
+
+    .home__media {
+        text-align: center;
+    }
+
+    /* ============Query BANNERS============*/
+    #banner {
+        height: 50vh;
+    }
+    
+    #intro-banner {
+        padding: 2rem 1rem 1rem;
+        height: auto;
+    }
+
+    .banner__title h1 {
+        font-size: var(--font-large);
+    }
+
+    .banner__intro h2 {
+        font-size: 30px;
+    }
+
+    .banner__intro p {
+        font-size: 15px;
+    }
+
+    /* ============Query ABOUT============*/
+    .about__team {
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .about__cards {
+        width: 60%;
+        height: 350px;
+    }
+
+    .about__cards > i {
+        font-size: 35px;
+    }
+
+    .about__cards h3 {
+        font-size: 30px;
+    }
+
+    .about__cards-btn{
+        display: inline-flex;
+        width: 90%;
+        height: 2.5rem;
+        border-radius: 15px;    
+    }
+
+    .about__cards-btn i {
+        font-size: 25px;
+    }
+
+
+    /* ============Query CONTACT============*/
+
+    .location__content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .location__content > img {
+        width: 45vw;
+        grid-column: span 2;
+        margin: 0 auto;
+    }
+    
+    .location__text-1,
+    .location__text-2 {
+        text-align: center;
+    }
+
+    .location__text-2{
+        grid-column: span 2;
+    }
+
+    .location__content iframe {
+        width: 90%;
+        grid-column: span 2;
+        margin: 0 auto;
+    }
+
+    #contact__form {
+        height: auto;
+    }
+    .form {
+        grid-template-columns: 1fr;
+
+    }
+
+    .form__msn,
+    .form__textarea,
+    .form__group-btn-submit {
+        grid-column: 1;
+    }
+
+    .form__btn {
+        width: 100%;
+    }
+
+    /* ============Query CONTACT============*/
+    
+    #project {
+        gap: 50px;
+    }
+
+    .project__services-2 .project__area {
+        order: 1;
+    }
+
+    .project__services-2 img {
+        order: 2;
+    }
+
+    .project__services-1,
+    .project__services-2 {
+        flex-direction: column;
+    }
+
+    .project__services-1 img,
+    .project__services-2 img {
+        width: 95%;
+    }
+
+    .project__area h2 {
+        font-size: 30px;
+    }
+
+    .project__area p {
+        font-size: 15px;
+    } 
+
+    /* ============Query Section Shop============*/
+    #shop h1 {
+        font-size: 30px;
+    }
+
+    #app {
+        grid-template-columns: 1fr;
+    }
+
+    .shop__cards {
+        margin: 0 auto;
+        width: 80%;
+        height: 500px;
+    }
+
+
+
+
+
+    /* ============Query FOOTER============*/
+    .footer__btn {
+        right: 15px;
+    }
+
+}

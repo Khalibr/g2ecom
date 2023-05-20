@@ -4,22 +4,21 @@
 /* root */
 :root{
     /* Pallete */
-    --bg-black: #1f242d;
-    --bg-grey: #323946;
-    --bg-grey-form: rgb(73, 77, 85);
-    --bg-blue: #AFD3E2;
+    --bg-black: rgb(31, 36, 45);
+    --bg-grey: rgb(50, 57, 70);
+    --bg-blue: rgb(175, 211, 226);
 
-    --text-white: #fff;
-    --text-blue: #AFD3E2;
-    --text-pink:  #C1666B;
-    --text-black:  #1f242d;
+    --text-white: rgb(255, 255, 255);
+    --text-blue: rgb(175, 211, 226);
+    --text-pink:  rgb(193, 102, 107);
+    --text-black:  rgb(31, 36, 45);
 
     /* Form tools */
     --bg-grey-form: rgb(73, 77, 85);
     --bg-black-section: rgb(46, 51, 59);
-    --form-blue: #0075FF;
-    --form-gren: #119200;
-    --form-red: #bb2929;
+    --form-blue: rgb(0, 117, 255);
+    --form-gren: rgb(17, 146, 0);
+    --form-red: rgb(187, 41, 41);
 
     /* Font-Sizes */
     --font-display: 4.6rem;
@@ -60,7 +59,7 @@
 /* Normalize section */
 
 section{
-    height: 100vh;
+    /* height: 100vh; */
     padding: var(--spacing-80-7) 3rem;
 }
 
@@ -127,15 +126,36 @@ span{
 .home__content{
     width: 50vw;
 }
+
 .home__img img {
     width: 25vw;
     border-radius: 10%;
     box-shadow: 0 0 1rem;
+    animation: imgfloat 4s ease-in-out infinite;
 }
 
-.home__content h1 {
+@keyframes imgfloat {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.home h1 {
     font-size: var(--font-large);
     color: var(--text-black);
+    font-weight: 900;
+    line-height: 4rem;
+}
+
+.home span {
+    font-size: var(--font-large);
     font-weight: 900;
     line-height: 4rem;
 }
@@ -509,7 +529,7 @@ span{
 }
 
 
-/* ============DESIGN PROJECTS============ */
+/* ============DESIGN SERVICES============ */
 #project {
     width: 100%;
     height: 200vh;
@@ -615,28 +635,48 @@ span{
     color:var(--text-pink);
 }
 
+/* ============DESIGN VUE PRODUCTS ============ */
+#shop h1 {
+    text-align: center;
+    font-size: var(--font-large);
+    padding-bottom: var(--spacing-12);
+    border-bottom: 1px solid black;
+}
 
-/* ============DESIGN MediaQuery============ */
+#app{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding-top: 1rem;
+    gap: 50px;
+}
 
-@media screen and (max-width:800px) {
+.shop__cards {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: var(--spacing-8);  
+    border: 1px solid var(--bg-blue);
+}
 
-    section{
-        padding: var(--spacing-60-7) 2rem;
-    }
+.shop__cards h2 {
+    font-size: var(--font-medium);
+}
 
-    .form {
-        grid-template-columns: 1fr;
+.shop__cards .price {
+    font-weight: 700;
+}
 
-    }
-
-    .form__msn,
-    .form__textarea,
-    .form__group-btn-submit {
-        grid-column: 1;
-    }
-
-    .form__btn {
-        width: 100%;
-    }
-    
+.shop__cards a {
+    width: 100px;
+    background-color: var(--bg-grey);
+    color: var(--text-blue);
+    text-align: center;
+    border-radius: 15px;
+    transition: .5s ease;
+}
+.shop__cards a:hover {
+    box-shadow: 0 0 15px var(--bg-black);
 }

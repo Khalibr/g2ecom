@@ -69,7 +69,7 @@ inputs.forEach((input) => {
 });
 
 // ========== LOGICA BOOLEANA ========== //
-form.addEventListener('submit', (e) => {
+form.addEventListener("submit", (e) => {
 
     e.preventDefault();
 
@@ -85,6 +85,9 @@ form.addEventListener('submit', (e) => {
         document.querySelectorAll('.form__group-correct').forEach((icono) => {
             icono.classList.remove('form__group-correct');
         });
+
+        document.getElementById('form__msn').classList.remove('form__msn-active');
+
     } else {
         document.getElementById('form__msn').classList.add('form__msn-active');
     }
