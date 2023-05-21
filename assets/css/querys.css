@@ -1,6 +1,22 @@
 
-/* ============QUERY SMALL (PHONE)============*/
-@media screen and (max-width:500px) {
+:root{
+    /* Font-size query small*/
+    --s-font-nav: 15px;
+    --s-font-h1: 25px;
+    --s-font-h0: 30px;
+    --s-font-p: 15px;
+    --s-font-banner: 50px;
+
+    /* Font-size query medium*/
+    --m-font-nav: 20px;
+    --m-font-h1: 30px;
+    --m-font-h0: 35px;
+    --m-font-p: 20px;
+    --m-font-banner: 55px;
+}
+
+/* ============VIEWPORT QUERY SMALL (PHONE)============*/
+@media screen and (max-width:767px) {
 
     /* NORMALIZE SECTION QUERY */
     section {
@@ -9,7 +25,7 @@
 
     /* ============Query HEADER============*/
     .navbar a {
-        font-size: 15px;
+        font-size: var(--s-font-nav);
     }
 
     /* ============Query HOME============*/
@@ -30,11 +46,11 @@
 
     .home h1,
     .home span {
-        font-size: 25px;
+        font-size: var(--s-font-h1);
     }
 
     .home p {
-        font-size: 15px;
+        font-size: var(--s-font-p);
     }
 
     .home__media {
@@ -52,15 +68,15 @@
     }
 
     .banner__title h1 {
-        font-size: var(--font-large);
+        font-size: var(--s-font-banner);
     }
 
     .banner__intro h2 {
-        font-size: 30px;
+        font-size: var(--s-font-h0);
     }
 
     .banner__intro p {
-        font-size: 15px;
+        font-size: var(--s-font-p);
     }
 
     /* ============Query ABOUT============*/
@@ -79,18 +95,17 @@
     }
 
     .about__cards h3 {
-        font-size: 30px;
+        font-size: var(--s-font-h0);
     }
 
     .about__cards-btn{
-        display: inline-flex;
         width: 90%;
         height: 2.5rem;
         border-radius: 15px;    
     }
 
     .about__cards-btn i {
-        font-size: 25px;
+        font-size: var(--s-font-h0);
     }
 
 
@@ -119,6 +134,7 @@
 
     .location__content iframe {
         width: 90%;
+        height: 250px;
         grid-column: span 2;
         margin: 0 auto;
     }
@@ -160,23 +176,26 @@
         flex-direction: column;
     }
 
-    .project__services-1 img,
+    .project__services-1 img {
+        width: 450px;
+        height: 300px;
+    }
     .project__services-2 img {
-        width: 95%;
+        width: 500px;
     }
 
     .project__area h2 {
-        font-size: 30px;
+        font-size: var(--s-font-h0);
     }
 
     .project__area p {
-        font-size: 15px;
+        font-size: var(--s-font-p);
     } 
 
     /* ============Query Section Shop============*/
     
     #shop h1 {
-        font-size: 30px;
+        font-size: var(--s-font-h1);
     }
 
     #app {
@@ -190,12 +209,132 @@
     }
 
 
-
-
-
     /* ============Query FOOTER============*/
     .footer__btn {
         right: 15px;
+    }
+
+}
+
+
+/* ============VIEWPORT QUERY MEDIUM (TABLET)============*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    
+    /* ============Query HEADER============*/
+    .navbar a {
+        font-size: var(--m-font-nav);
+    }
+
+    /* ============Query HOME============*/
+    .home__img img {
+        width: 40vw;
+    }
+
+    .home h1,
+    .home span {
+        font-size: var(--m-font-h1);
+    }
+
+    .home p {
+        font-size: var(--m-font-p);
+    }
+
+    /* ============Query BANNERS============*/
+    #banner {
+        height: 50vh;
+    }
+    
+    #intro-banner {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .banner__title h1 {
+        font-size: var(--m-font-banner);
+    }
+
+    .banner__intro h2 {
+        font-size: var(--m-font-h0);
+    }
+
+    .banner__intro p {
+        font-size: var(--m-font-p);
+    }
+
+    /* ============Query ABOUT============*/
+
+    .about__cards {
+        width: 100%;
+        height: 400px;
+    }
+
+    .about__cards > i {
+        font-size: 40px;
+    }
+
+    
+    .about__cards h3 {
+        font-size: var(--m-font-h0);
+    }
+
+    .about__cards-btn{
+        width: 50%;
+        height: 2.5rem;
+        border-radius: 15px;    
+    }
+    
+    .about__cards-btn i {
+        font-size: var(--m-font-h0);
+    }
+
+    /* ============Query CONTACT============*/
+
+    
+    .location__content > img {
+        width: 35vw;
+    }
+    
+    .location__content iframe {
+        height: 250px;
+    }
+    /* ============Query SERVICES============*/
+    
+    #project {
+        gap: 50px;
+    }
+
+    .project__services-2 .project__area,
+    .project__services-1 .project__area {
+        order: 1;
+    }
+
+    .project__services-2 img {
+        order: 2;
+    }
+
+    .project__area h2 {
+        font-size: var(--m-font-h0);
+    }
+
+    .project__area p {
+        font-size: var(--m-font-p);
+    } 
+
+    /* ============Query Section Shop============*/
+    #shop h1 {
+        font-size: var(--m-font-h1);
+    }
+
+    #app {
+        gap: 25px;
+    }
+
+    .shop__cards h2{
+        font-size: 25px;
+    }
+
+    .shop__cards p {
+        font-size: 15px;
     }
 
 }
