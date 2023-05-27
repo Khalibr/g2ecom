@@ -95,7 +95,7 @@ span{
     margin-right: var(--spacing-12);
 }
 
-.navbar a {
+.navbar a{
     font-size: var(--font-small);
     color: var(--text-white);
     transition: all .5s ;
@@ -105,6 +105,14 @@ span{
 .navbar a:hover{
     color:var(--text-blue)
 }
+
+#menu-icon {
+    font-size: var(--font-small);
+    color: var(--text-white);
+    display: none;
+}
+
+
 
 
 /* ============DESIGN HOME============*/

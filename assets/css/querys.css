@@ -1,14 +1,14 @@
 
 :root{
     /* Font-size query small*/
-    --s-font-nav: 12px;
+    --s-font-nav: 25px;
     --s-font-h1: 25px;
     --s-font-h0: 30px;
     --s-font-p: 15px;
     --s-font-banner: 50px;
 
     /* Font-size query medium*/
-    --m-font-nav: 20px;
+    --m-font-nav: 25px;
     --m-font-h1: 30px;
     --m-font-h0: 35px;
     --m-font-p: 20px;
@@ -27,13 +27,33 @@
     .logo img {
         width: 60px;
     }
+
     .navbar {
-        padding-right: 1rem;
-    }
-    .navbar a {
-        font-size: var(--s-font-nav);
+        padding: 0 3%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: var(--bg-grey);
+        display: none;
     }
 
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar ul {
+        text-align: center;
+        display: block;
+        font-size: var(--s-font-nav);
+        margin: 1rem 0;
+    }
+    
+
+    #menu-icon {
+        display: block;
+        font-size: var(--s-font-nav);
+    }
 
     /* ============Query HOME============*/
     .home {
