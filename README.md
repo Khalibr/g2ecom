@@ -5,8 +5,8 @@
 ## • Coordinador: Ramiro Leiva
 ## • Tutor: Andres Ocaña
 - Alumnos:
-  - Julian Medina
-  - Mariano 
+  - Julián Medina
+  - Mariano Méndez
  
   
 
