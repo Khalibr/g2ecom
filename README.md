@@ -24,7 +24,7 @@
 > La página de inicio cuenta con una animación en su imagen que le proporciona un efecto flotante que agrega una sensación de vida y movimiento, lo cual ayuda a destacar el contenido principal.
 
 ### MediaQuery
-> Se seleccionaron dos puntos de corte para adaptar las mediaqueries a dispositivos móviles tipo **smartphone y tablet**. Estos puntos de corte se eligieron considerando medidas estándar para dispositivos móviles.<br><br> • El primer punto de corte, con el valor de **"max-width: 767px"**, se utiliza para aplicar estilos específicos a dispositivos móviles tipo smartphone.<br><br> • El segundo punto de corte, con el valor de **"(min-width: 768px) and (max-width:1024px)"**, se utiliza para aplicar estilos específicos a tablets/Notebooks.
+> Se seleccionaron tres puntos de corte para adaptar las mediaqueries a dispositivos móviles tipo **smartphone, tablet/notebook y desktop**. Estos puntos de corte se eligieron considerando medidas estándar para dispositivos móviles.<br><br> • El primer punto de corte, con el valor de **"max-width: 767px"**, se utiliza para aplicar estilos específicos a dispositivos móviles tipo smartphone.<br><br> • El segundo punto de corte, con el valor de **"(min-width: 768px) and (max-width:1024px)"**, se utiliza para aplicar estilos específicos a tablets/Notebooks.<br><br> • El Tercero es el codigo estandar siendo ésta la base de los estilos en dispotivos tipo escritorio.
 <hr>
 
 <h2 align="center"> JavaScript </h2>
@@ -39,6 +39,15 @@
 > El script implementa lenguaje del **framework Vue** montado dentro del archivo *"services.html"*. La misma se realiza dentro de la sección *"shop"*, que se encarga de mostrar información relacionada con productos o servicios.<br><br>Dentro de la aplicación **Vue**, se realiza una solicitud a una API externa que en este caso optamos por utilizar ***SheetDB*** para obtener datos específicos. Estos datos pueden incluir información sobre productos, precios,disponibilidad u otros detalles relevantes. Una vez que los datos son recibidos desde la API,se renderizan en la página web, lo que permite que los usuarios puedan ver y utilizar la información obtenida de la API.
 <hr>
 
+<h2 align="center"> Colaboración </h2>
+
+### Mariano Méndez
+> • Mariano Méndez fue responsable de la maquetación en figma para la base del diseño y desempeñó un papel clave en la adaptación del sitio web a diferentes dispositivos y tamaños de pantalla. Su labor incluyó la propuesta de puntos de corte con media queries y la implementación de un menú desplegable en dispositivos móviles, mejorando la experiencia de usuario y asegurando que el sitio se vea y funcione de manera óptima en todas las plataformas.
+
+### Julián Medina
+> • Tuve la responsabilidad de encargarme de la estructuración del HTML y CSS, así como de la validación del formulario utilizando JavaScript. Además, implementé el framework Vue.js para visualizar los productos que fueron traídos desde una API externa creada con SheetDB. En esta API, se introdujeron manualmente los datos necesarios para manipularlos de manera personalizada.<br><br>En cuanto a la estructuración del HTML y CSS, me aseguré de crear un código limpio y organizado que cumpliera con los estándares de accesibilidad y usabilidad. Trabajé en la definición de la estructura de la página, la disposición de los elementos y la aplicación de estilos para lograr una apariencia atractiva y coherente en todo el sitio.<br><br>Además, me ocupé de la validación del formulario utilizando JavaScript. Implementé funciones y lógica que verificaban la corrección de los datos ingresados por el usuario, como campos obligatorios, formato de correo electrónico y otras validaciones específicas. Esto garantizó que los datos enviados a través del formulario fueran correctos y consistentes.<br><br>Por otro lado, utilicé Vue.js para integrar y mostrar los productos provenientes de una API externa creada con SheetDB. Esta API permitió almacenar y organizar los datos necesarios para manipular los productos de manera eficiente. Gracias a Vue.js, pude realizar la conexión con la API, obtener los datos y mostrarlos de forma dinámica en el sitio web.
+
+<hr>
 <h2 align="center"> Herramientas utilizadas </h2>
 
 * [HTML.docs](https://developer.mozilla.org/es/docs/Web/HTML)
